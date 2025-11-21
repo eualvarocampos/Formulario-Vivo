@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário De Cadastro Na Vivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgb(71, 7, 145); color: white;">
+    <img src="Logo_VIVO.svg.png" alt="LogoMarca Vivo" width = "200" height= "70">
+    <h1> Cadastro Vivo </h1>
+    <h2> Preencha o formulário abaixo para se cadastrar no 
+        nosso site especializado em produtos Vivo. </h2>
+        <div> 
+            <form method="get"> 
+                <h2> Digite Seus Dados </h2>
+            <label> Nome: </label>
+            <input type= "text" name="name" 
+                    placeholder="Digite seu nome completo aqui."> <br> <br>
+            <label> E-mail: </label>
+            <input type= "email" name="email" 
+                    placeholder="Digite aqui seu melhor e-mail"> <br> <br>
+            <label> C.P.F: </label>
+            <input type= "text" name="cpf"  
+                    placeholder="000.000.000-00" 
+                    pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
+                    maxlength="14"> <br> <br>
+            <label> Telefone: </label>
+            <input type="text" name="telefone"
+                    placeholder="Digite seu telefone com DDD"   
+                    pattern="[0-9]{2}[0-9]{8,9}"
+                    maxlength="15"> <br> <br>
+             <label> Onde você nos conheceu? </label>
+             <select name ="ondeConheceu">
+                <option value="internet"> Internet </option>
+                <option value="amigos"> Amigos </option>
+                <option value="redesSociais"> Redes Sociais </option>
+                <option value="outros"> Outros </option>
+             </select> 
+             <input type="text" name="outrosEspecificacao" 
+                    placeholder="Se digitou outros, especifique aqui."> <br> <br>  
+             <input type="submit" value="Enviar" onclick="alert('Formulário Enviado! Nossa equpe entrará em contato em breve.')">    
+            </form>
+        </div>
+    <footer> <br>
+        <p> &copy; 2024 Vivo. Todos os direitos reservados. </p>
+    </footer>
+</body>
+</html>
